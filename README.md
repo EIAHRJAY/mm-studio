@@ -14,7 +14,7 @@ If you are developing a production application, we recommend using TypeScript wi
 ## INSTALLATION
 
 # Install Tailwind CSS
-npm install tailwindcss @tailwindcss/postcss postcss
+npm install tailwindcss @tailwindcss/vite
 
 # Start
  npm run dev
