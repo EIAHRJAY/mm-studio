@@ -1,0 +1,20 @@
+<svg width="1792" height="1024" viewBox="0 0 1792 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="cardClip"><rect x="0" y="0" width="210" height="280" rx="18" ry="18"/></clipPath>
+    <g id="card">
+      <rect x="-105" y="-140" width="210" height="280" rx="18" fill="#EC2890"/>
+      <image href="/images/objetos/REEMPLAZA.png" x="-75" y="-100" width="150" height="200" preserveAspectRatio="xMidYMid meet" clip-path="url(#cardClip)"/>
+    </g>
+  </defs>
+
+  <!-- 7 posiciones (centro del arco 896,360 y radio 420) -->
+  <g>
+    <g transform="translate( 896-413.3 , 360-72.9) rotate(-80)"><use href="#card"/></g>
+    <g transform="translate( 896-322.0 , 360-269.8) rotate(-50)"><use href="#card"/></g>
+    <g transform="translate( 896-146.9 , 360-414.8) rotate(-20)"><use href="#card"/></g>
+    <g transform="translate( 896+0.0   , 360-420.0) rotate(0)"><use href="#card"/></g>
+    <g transform="translate( 896+146.9 , 360-414.8) rotate(20)"><use href="#card"/></g>
+    <g transform="translate( 896+322.0 , 360-269.8) rotate(50)"><use href="#card"/></g>
+    <g transform="translate( 896+413.3 , 360-72.9) rotate(80)"><use href="#card"/></g>
+  </g>
+</svg>
