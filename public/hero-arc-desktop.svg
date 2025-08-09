@@ -1,0 +1,21 @@
+<svg width="1792" height="1024" viewBox="0 0 1792 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="card">
+      <rect x="-85" y="-120" width="170" height="240" rx="18" fill="#EC2890"/>
+      <!-- Para poner el objeto dentro de la tarjeta, descomenta y cambia el href -->
+      <!-- <image href="/images/objetos/secador.png" x="-60" y="-85" width="120" height="170" preserveAspectRatio="xMidYMid meet"/> -->
+    </g>
+  </defs>
+
+  <!-- Centro del arco -->
+  <!-- cx=896, cy=420, R=340 -->
+  <!-- Ángulo -> rotación = ángulo + 90 -->
+
+  <g transform="translate(567.6 332.0) rotate( -75)"><use href="#card"/></g>  <!-- -165° -->
+  <g transform="translate(635.6 201.4) rotate( -50)"><use href="#card"/></g>  <!-- -140° -->
+  <g transform="translate(752.3 111.9) rotate( -25)"><use href="#card"/></g>  <!-- -115° -->
+  <g transform="translate(896.0  80.0) rotate(   0)"><use href="#card"/></g>  <!--  -90° -->
+  <g transform="translate(1039.7 111.9) rotate(  25)"><use href="#card"/></g>  <!--  -65° -->
+  <g transform="translate(1156.4 201.4) rotate(  50)"><use href="#card"/></g>  <!--  -40° -->
+  <g transform="translate(1224.4 332.0) rotate(  75)"><use href="#card"/></g>  <!--  -15° -->
+</svg>
