@@ -1,17 +1,53 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // ↓↓↓ NUEVO: estado para ocultar/mostrar según scroll
+  const [hidden, setHidden] = useState(false);
+  const lastY = useRef(0);
+  const ticking = useRef(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (ticking.current) return;
+      ticking.current = true;
+
+      requestAnimationFrame(() => {
+        const y = window.scrollY || 0;
+
+        
+        if (y > 10) {
+          setHidden(y > lastY.current); 
+        } else {
+          setHidden(false); 
+        }
+
+        lastY.current = y;
+        ticking.current = false;
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 text-white">
+    <nav
+      className={
+        
+        "fixed inset-x-0 top-0 z-50 text-white " +
+        "transform-gpu transition-transform duration-300 will-change-transform " +
+        (hidden ? "-translate-y-full" : "translate-y-0")
+      }
+    >
       <div className="mx-auto max-w-7xl px-4 py-3">
         <div className="relative flex items-center justify-between">
           {/* Menú izquierdo */}
           <ul className="hidden md:flex gap-6 text-sm">
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">Testimonios</a></li>
+            <li><a href="#Home">Inicio</a></li>
+            <li><a href="#testimonials">Opiniones</a></li>
+            <li><a href="#portfolio">Preguntas frecuentes</a></li>
           </ul>
 
           {/* Logo centrado */}
@@ -22,20 +58,19 @@ export default function Navbar() {
 
           {/* Botón WhatsApp */}
           <div className="hidden md:block">
-  <a
-    href="https://wa.me/34600123456?text=Hola%20MM%20Studio,%20quiero%20más%20información."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-[#EC2890] hover:opacity-90 px-4 py-2 rounded-full text-sm font-medium transition active:scale-[0.99]"
-  >
-    Hablar por WhatsApp
-  </a>
-</div>
+            <a
+              href="https://wa.me/34642478593?text=Hola%20MM%20Studio,%20quiero%20más%20información."
+              target="_blank" rel="noopener noreferrer"
+              className="bg-[#EC2890] hover:opacity-90 px-4 py-2 rounded-full text-sm font-medium transition active:scale-[0.99]"
+            >
+              Hablar por WhatsApp
+            </a>
+          </div>
 
           {/* Hamburguesa */}
           <button
             className="md:hidden ml-auto"
-            onClick={() => setIsOpen((v) => !v)}
+            onClick={() => setIsOpen(v => !v)}
             aria-label="Toggle menu"
           >
             ☰
@@ -46,19 +81,18 @@ export default function Navbar() {
       {/* Menú móvil */}
       {isOpen && (
         <ul className="md:hidden bg-[#232323]/95 px-4 py-4 space-y-4">
-          <li><a href="#contact">Contacto</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#Home">Inicio</a></li>
+            <li><a href="#testimonials">Opiniones</a></li>
+            <li><a href="#portfolio">Preguntas frecuentes</a></li>
           <li>
             <a
-                href="https://wa.me/34600123456?text=Hola%20MM%20Studio,%20quiero%20más%20información."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-[#EC2890] hover:opacity-90 px-4 py-2 rounded-full text-sm font-medium text-center transition active:scale-[0.99]"
+              href="https://wa.me/34642478593?text=Hola%20MM%20Studio,%20quiero%20más%20información."
+              target="_blank" rel="noopener noreferrer"
+              className="block bg-[#EC2890] hover:opacity-90 px-4 py-2 rounded-full text-sm font-medium text-center transition active:scale-[0.99]"
             >
-                Hablar por WhatsApp
+              Hablar por WhatsApp
             </a>
-        </li>
+          </li>
         </ul>
       )}
     </nav>
