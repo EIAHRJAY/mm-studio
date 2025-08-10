@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#232323] text-white">
+    <section className="relative overflow-hidden bg-[#232323] text-white ">
       {/* IMAGEN FULL-BLEED */}
       <div className="relative w-full">
         <picture>
@@ -25,7 +25,7 @@ export default function Hero() {
         <div
           className="
             absolute left-1/2 -translate-x-1/2
-            top-[39%] sm:top-[54%] md:top-[53%] lg:top-[52%]
+            top-[33%] sm:top-[54%] md:top-[53%] lg:top-[52%]
             max-[390px]:top-[38%]   /* iPhone 12 ajustado */
             max-[375px]:top-[39.5%]     /* iPhone SE  */
             w-full px-4
@@ -60,7 +60,7 @@ Reserva tu cita hoy, luce espectacular y sorpréndete con el cambio.
 
 <div className="mt-3 sm:mt-5 flex justify-center">
   <a
-    href="https://booksy.com/tu-enlace-aqui" // cámbialo por el enlace real
+    href="https://booksy.com/es-es/98197_mmstudiobelleza-estetica_salon-de-unas_68645_manacor#ba_s=sh_1" // cámbialo por el enlace real
     target="_blank"
     rel="noopener noreferrer"
     className="
@@ -90,6 +90,3 @@ Reserva tu cita hoy, luce espectacular y sorpréndete con el cambio.
     </section>
   );
 }
-
-
- 
