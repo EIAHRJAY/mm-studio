@@ -45,9 +45,9 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between">
           {/* Menú izquierdo */}
           <ul className="hidden md:flex gap-6 text-sm">
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">Testimonios</a></li>
+            <li><a href="#Home">Inicio</a></li>
+            <li><a href="#testimonials">Opiniones</a></li>
+            <li><a href="#portfolio">Preguntas frecuentes</a></li>
           </ul>
 
           {/* Logo centrado */}
@@ -81,9 +81,9 @@ export default function Navbar() {
       {/* Menú móvil */}
       {isOpen && (
         <ul className="md:hidden bg-[#232323]/95 px-4 py-4 space-y-4">
-          <li><a href="#contact">Contacto</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#Home">Inicio</a></li>
+            <li><a href="#testimonials">Opiniones</a></li>
+            <li><a href="#portfolio">Preguntas frecuentes</a></li>
           <li>
             <a
               href="https://wa.me/34642478593?text=Hola%20MM%20Studio,%20quiero%20más%20información."
