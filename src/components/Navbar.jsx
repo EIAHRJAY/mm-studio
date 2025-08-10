@@ -16,11 +16,11 @@ export default function Navbar() {
       requestAnimationFrame(() => {
         const y = window.scrollY || 0;
 
-        // Mostrar si subes, ocultar si bajas (a partir de 10px)
+        
         if (y > 10) {
-          setHidden(y > lastY.current); // true si estás bajando
+          setHidden(y > lastY.current); 
         } else {
-          setHidden(false); // en el top, siempre visible
+          setHidden(false); 
         }
 
         lastY.current = y;
@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <nav
       className={
-        // MISMAS CLASES TUYAS + solo animación de translateY
+        
         "fixed inset-x-0 top-0 z-50 text-white " +
         "transform-gpu transition-transform duration-300 will-change-transform " +
         (hidden ? "-translate-y-full" : "translate-y-0")

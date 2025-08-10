@@ -1,4 +1,3 @@
-// src/components/WhyUs.jsx
 import { ArrowRight } from "lucide-react";
 
 const items = [
@@ -38,7 +37,7 @@ export default function WhyUs() {
           </h2>
         </header>
 
-        {/* --- mantiene  grid con líneas y rombos  --- */}
+        
         
         <div className="relative bg-white border border-zinc-300 overflow-visible">
           {/* rombos de las 4 esquinas */}
