@@ -31,7 +31,7 @@ export default function Footer() {
                 <SiInstagram size={18} className="text-white" />
               </a>
               <a
-                href="https://maps.google.com/?q=MM%20Studio%20de%20Belleza%20%26%20Estetica"
+                href="https://www.google.com/maps/place/MM+Studio+de+Belleza+%26+Estetica/@39.5662308,3.1369873,13z/data=!4m10!1m2!2m1!1sMM+Studio+de+Belleza+%26+Estetica!3m6!1s0x129649f223fa9b81:0xf6f37e5ce9431a35!8m2!3d39.5662308!4d3.2090851!15sCh9NTSBTdHVkaW8gZGUgQmVsbGV6YSAmIEVzdGV0aWNhkgESdW5pc2V4X2hhaXJkcmVzc2VyqgFgCg0vZy8xMXA2cXF2Mm15CgcvbS8weDB3EAEyHxABIhveVaqqneSywO6sFvN_KpVbGOESopyp4DM56S0yIxACIh9tbSBzdHVkaW8gZGUgYmVsbGV6YSAmIGVzdGV0aWNh4AEA!16s%2Fg%2F11p6qqv2my?entry=ttu&g_ep=EgoyMDI1MDgxMC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google"
@@ -41,7 +41,7 @@ export default function Footer() {
                 <SiGoogle size={18} className="text-white" />
               </a>
               <a
-                href="https://booksy.com/tu-enlace"
+                href="https://booksy.com/es-es/98197_mmstudiobelleza-estetica_salon-de-unas_68645_manacor?hl=pt-PT&gei=ydOYaJzQPI6kkdUP0d7A4A8&rwg_token=ACgRB3cvAi37WxUAGDNmBVPq4Ei_y3LVjKSA3FRjhsNBUGfpBgfdZPH1haos3w5A4T4bBkFpCuxqXMXVMFt8E9wiTwQXDkRFZA%3D%3D#ba_s=seo"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Booksy"
@@ -77,7 +77,7 @@ export default function Footer() {
               <li>
                 <a
                   className="inline-flex items-center gap-1.5 hover:text-white"
-                  href="https://booksy.com/tu-enlace"
+                  href="https://booksy.com/es-es/98197_mmstudiobelleza-estetica_salon-de-unas_68645_manacor?hl=pt-PT&gei=ydOYaJzQPI6kkdUP0d7A4A8&rwg_token=ACgRB3cvAi37WxUAGDNmBVPq4Ei_y3LVjKSA3FRjhsNBUGfpBgfdZPH1haos3w5A4T4bBkFpCuxqXMXVMFt8E9wiTwQXDkRFZA%3D%3D#ba_s=seo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -107,7 +107,7 @@ export default function Footer() {
               <li>
                 <a
                   className="inline-flex items-center gap-1.5 hover:text-white"
-                  href="https://www.google.com/maps?q=39.5662308,3.2090851"
+                  href="https://www.google.com/maps/place/MM+Studio+de+Belleza+%26+Estetica/@39.5662308,3.1730362,14z/data=!4m10!1m2!2m1!1sMM+Studio+de+Belleza+%26+Estetica!3m6!1s0x129649f223fa9b81:0xf6f37e5ce9431a35!8m2!3d39.5662308!4d3.2090851!15sCh9NTSBTdHVkaW8gZGUgQmVsbGV6YSAmIEVzdGV0aWNhkgESdW5pc2V4X2hhaXJkcmVzc2VyqgFgCg0vZy8xMXA2cXF2Mm15CgcvbS8weDB3EAEyHxABIhveVaqqneSywO6sFvN_KpVbGOESopyp4DM56S0yIxACIh9tbSBzdHVkaW8gZGUgYmVsbGV6YSAmIGVzdGV0aWNh4AEA!16s%2Fg%2F11p6qqv2my?entry=ttu&g_ep=EgoyMDI1MDgxMC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
