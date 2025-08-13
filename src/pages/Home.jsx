@@ -4,7 +4,7 @@ import Testimonials from "../components/Testimonials";
 import PreTestimonials from "../components/PreTestimonials";
 import Program from "../components/Program";
 import TestimonialsIntro from "../components/TestimonialIntro";
-
+import FAQ from "../components/FAQ";
 export default function Home() {
     return (
      <>
@@ -16,6 +16,7 @@ export default function Home() {
       <PreTestimonials/>
 
       <Testimonials/>
+      <FAQ/>
       </>
     );
   }
